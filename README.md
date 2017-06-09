@@ -1,5 +1,5 @@
 # SpringBoot + REST + Mongo + Mockito
-=====================================
+
 It's a sample REST project, build by using Spring Boot and using Mongo DB for persistance.
 
 Project is build with [Spring Boot (1.5.3.RELEASE)](http://projects.spring.io/spring-boot/) 
