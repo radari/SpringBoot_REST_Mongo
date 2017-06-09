@@ -6,10 +6,9 @@ Project is build with [Spring Boot (1.5.3.RELEASE)](http://projects.spring.io/sp
 ## Table of Content ##
 
  1. [Description](#description)
- 2. [How to Run](#How-to-Run)
- 2. [Project Structure](#project-structure)
- 2. [Open Source Libraries Used](#open-source-libraries-used)
- 3. [Software](#software)
+ 2. [How to Run](#how-to-run)
+ 3. [Project Structure](#project-structure)
+ 4. [Software](#software)
  
 ## Description
 This repository comprises a sample app built with Spring Boot. All configurations are in java classes, no XML. Comments are in place to describe what this app is trying to do.
