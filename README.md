@@ -16,9 +16,11 @@ Project is build with [Spring Boot (1.5.3.RELEASE)](http://projects.spring.io/sp
 This repository comprises a sample app built with Spring Boot. All configurations are in java classes, no XML.
 
 3 basic HTTP methods are implemented:
--GET
--POST &
--DELETE
+
+-**GET**
+-**POST** &
+-**DELETE**
+
 BirdAppController.java is a REST controller.
 IBirdAppService.java is service to cater controller requests.
 Bird.java is a bean used as domain object. (check this bean to see how validations are placed on mandatory elements)
@@ -33,7 +35,7 @@ there are 3 ways to run this application:
 ### Launchnig the Application from STS(eclipse)
 1. import the application into eclipse as an existing maven project
 2. right click on Application.java file and Run As > Java Application
-![]({{site.baseurl}}/RunAsJavaApplication.jpg)
+![]({{site.baseurl}}/https://github.com/harshulvarshney/SpringBoot_REST_Mongo/blob/master/RunAsJavaApplication.jpg)
 
 ### Build a jar and execute it
 1. go to project root directory, where pom.xml file is present
