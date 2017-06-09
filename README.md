@@ -13,17 +13,27 @@ Project is build with [Spring Boot (1.5.3.RELEASE)](http://projects.spring.io/sp
  4. [Software](#software)
  
 ## Description
-This repository comprises a sample app built with Spring Boot. All configurations are in java classes, no XML. Comments are in place to describe what this app is trying to do.
+This repository comprises a sample app built with Spring Boot. All configurations are in java classes, no XML.
+
+3 basic HTTP methods are implemented:
+-GET
+-POST &
+-DELETE
+BirdAppController.java is a REST controller.
+IBirdAppService.java is service to cater controller requests.
+Bird.java is a bean used as domain object. (check this bean to see how validations are placed on mandatory elements)
+BirdRepository is an interface providing persistance with MongoDB.
 
 ## How to Run
 there are 3 ways to run this application:
 1. Launch it from eclipse
 2. Build a jar and execute it
 3. Create a war and deploy it on server
+
 ### Launchnig the Application from STS(eclipse)
 1. import the application into eclipse as an existing maven project
 2. right click on Application.java file and Run As > Java Application
-
+![]({{site.baseurl}}/RunAsJavaApplication.jpg)
 
 ### Build a jar and execute it
 1. go to project root directory, where pom.xml file is present
@@ -40,7 +50,7 @@ We can direct start the application, even without building the jar by using belo
 - **repository**: It's an interface which allows various operations on Bird objects. It gets these operations by extending MongoRepository, which in turn extends the PagingAndSortingRepository interface defined in Spring Data Commons.
 
 Spring boot usees some default properties for interacting with MongoDB, e.g:
-spring.data.mongodb.port=27017 # Mongo server port. Cannot be set with uri.
+> spring.data.mongodb.port=27017 # Mongo server port. Cannot be set with uri.
 spring.data.mongodb.repositories.enabled=true # Enable Mongo repositories.
 spring.data.mongodb.uri=mongodb://localhost/test
 
