@@ -1,0 +1,10 @@
+{
+    "name": "test3",
+    "family": "indian",
+    "continents": [
+      "continent-2",
+      "continent-1"
+    ],
+    "added": "2017-06-04",
+    "visible": true
+  }
