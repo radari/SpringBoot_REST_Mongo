@@ -39,11 +39,11 @@ there are 3 ways to run this application:
 
 ### Build a jar and execute it
 1. go to project root directory, where pom.xml file is present
-2. build the jar by usnig: **mvn clean package**, verify that a jar is build insite target folder
-3. execute the jar: **java -jar target/sample-bird-app-1.0.jar**
+2. build the jar by usnig: **> mvn clean package**, verify that a jar is build insite target folder
+3. execute the jar: **> java -jar target/sample-bird-app-1.0.jar**
 
 We can direct start the application, even without building the jar by using below command:
-****mvn spring-boot:run
+> mvn spring-boot:run
 
 ## Project Structure
 
