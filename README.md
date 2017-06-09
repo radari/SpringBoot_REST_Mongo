@@ -1,4 +1,5 @@
-# SpringBoot_REST_Mongo
+# SpringBoot + REST + Mongo + Mockito
+=====================================
 It's a sample REST project, build by using Spring Boot and using Mongo DB for persistance.
 
 Project is build with [Spring Boot (1.5.3.RELEASE)](http://projects.spring.io/spring-boot/) 
@@ -8,6 +9,7 @@ Project is build with [Spring Boot (1.5.3.RELEASE)](http://projects.spring.io/sp
  1. [Description](#description)
  2. [How to Run](#how-to-run)
  3. [Project Structure](#project-structure)
+ 4. [Testing the Application](#testing-the-application)
  4. [Software](#software)
  
 ## Description
@@ -21,7 +23,7 @@ there are 3 ways to run this application:
 ### Launchnig the Application from STS(eclipse)
 1. import the application into eclipse as an existing maven project
 2. right click on Application.java file and Run As > Java Application
-![]({{site.baseurl}}//RunAsJavaApplication.jpg)
+
 
 ### Build a jar and execute it
 1. go to project root directory, where pom.xml file is present
@@ -44,12 +46,13 @@ spring.data.mongodb.uri=mongodb://localhost/test
 
 check all these default properties [here](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
 
-## Testing with JUnit, Mockito & Hamcrest
-For testing this application, I have used JUnit, Mockito and Hamcrest. All these dependencies are maintained by Spring Boot. Check pom.xml for "spring-boot-starter-test" dependency , it is taking care of all underlying dependencies and latest versions of these open source projects.
+## Testing the Application
+For testing this application, I have used **JUnit, Mockito and Hamcrest**. All these dependencies are maintained by Spring Boot. Check pom.xml for "spring-boot-starter-test" dependency , it is taking care of all underlying dependencies and latest versions of these open source projects.
 
 - **Testing controller**: BirdAppControllerTest contains various tests for BirdAppController. There are tests for both sucess and failure scenarios.
 --MockMvc is used to mock various POST, GET and DELETE calls.
 --Mockito is used to mock the BirdAppService and return the reponse from mocked service instead of hitting actual service and DB.
+
 - **Testing Service**: BirdAppServiceTest contains various tests for BirdAppService. 
 --Mockito is used here to mock the repository calls, instead of hitting the actual repository, the service requests will be returned by our mocked repository.
 
